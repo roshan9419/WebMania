@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/dumbell.ico">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<img src="images/icon/fb2.png">
+				<img src="images/icon/insta2.png">
+				<img src="images/icon/tt2.png">
+			</div>
+			<form id="login" class="input-group">
+				<div class="inp"><img src="images/icon/user.png"><input type="text" class="input-field" placeholder="User Id required" style="width: 88%; border:none;"></div>
+				<div class="inp"><img src="images/icon/password.png"><input type="password" class="input-field" placeholder="Password required" style="width: 88%; border: none;"></div>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+				<button type="submit" class="submit-btn"><a href="source.htm" style="text-decoration: none; color: #fff;">Log In</a></button>
+				
+						
+			</form>
+			
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="Full Name">
+				<input type="email" class="input-field" placeholder="Email Address">
+				<input type="password" class="input-field" placeholder="Create Password">
+				<input type="password" class="input-field" placeholder="Confirm Password">
+				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()"><span>I agree to the Terms & Conditions</span>
+				<button type="submit" id="btnSubmit" class="submit-btn" style="color: black; background: lightgray;">Register</button>
+			</form>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+		var a = document.getElementById("log");
+		var b = document.getElementById("reg");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+			b.style.color = "#fff";
+			a.style.color = "#000";
+		}
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+			a.style.color = "#fff";
+			b.style.color = "#000";
+		}
+		function goFurther(){
+			if (document.getElementById("chkAgree").checked == true) {
+				document.getElementById("btnSubmit").disabled = false;
+				document.getElementById("btnSubmit").style.background = "#013E7C";
+				document.getElementById("btnSubmit").style.color = "#fff";
+			}
+			else{
+				document.getElementById("btnSubmit").disabled = true;
+				document.getElementById("btnSubmit").style.background = "lightgray";
+				document.getElementById("btnSubmit").style.color = "black";
+			}
+		}
+	</script>
+</body>
+</html>

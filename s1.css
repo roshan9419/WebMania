@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+}
+#title {
+  margin-right: 350px;
+  color: #efefef;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+#header 
+{
+	background-image: url(images/aboutwall.png);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+  background-attachment: fixed;
+	border-radius: 25px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+.navbar-nav li a
+{
+	float: right;
+	color: #fff!important;
+}
+.navbar .logo{
+  height:100px;
+  width:auto;
+}
+.navbar .logo:hover
+{
+	transition:2s;
+    transform:rotate(560deg);
+}
+.navbar-brand img 
+{
+  width: 150px;
+
+}
+.navbar-toggler
+{
+	border: none!important;
+	outline: none!important;
+	margin-top: -20px;
+}
+nav .fa-bars {
+	color: #fff !important;
+	font-size: 26px;
+}
+
+.welcome
+{
+	padding: 50px 100px;
+	margin-top: -140px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+	border-radius: 50px;
+}
+.welcome h1 {
+	color: #333;
+}
+.welcome .home-btn {
+	margin-top: 10px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: #013f7e;
+}
+
+.welcome .btn:focus {
+	box-shadow: none;
+}
+.welcome a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.welcome a:hover
+{
+	text-decoration: none;
+	transition: 1s;
+	color: #ADD8E6;
+}
+
+
+#about
+{
+	background: url(images/1244837.jpg);
+	background-position: center;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	
+}
+#about .col-md-6
+{
+	padding: 20px 10px;
+}
+.col-md-6 h3
+{
+	color: #03a9f4;
+}
+.col-md-6 p
+{
+	color: #fff;
+}
+.col-md-6 .img-fluid
+{
+	height:250px;
+    width:auto;
+    margin-left: 250px;
+    margin-top: -50px;   
+}
+.col-md-6 .img-fluid:hover
+{
+	transition:2s;
+	transform:translate(50px);
+
+}
+#about .h3
+{
+	margin: 20px auto;
+}
+.col-md-6 .nhead
+{
+	margin-left: 470px;
+}
+
+.col-md-6 .npara
+{
+	margin-left: 500px;
+  font-size: 20px;
+  color: #efefef;
+}
+.col-md-6 .img-gluid
+{
+	height:250px;
+    width:auto;
+    margin-top: -5px;
+    margin-left: 100px;
+}
+.col-md-6 .img-gluid:hover
+{
+	transition:2s;
+	transform:translate(-30px);
+
+}
+
+
+ #services
+ {
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+ }
+ #services .col-md-4
+ {
+  padding: 20px;
+  
+ }
+ #services .col-md-4 h4
+ {
+  padding: 5px;
+  
+ }
+ #services .col-md-4 img
+ {
+  width: 50px;
+  
+ } 
+ #services .col-md-4 p
+ {
+  padding: 5px;
+  text-align: justify;
+  
+ }
+/*Footer*/
+
+footer {
+  color: #6C757D;
+  background: rgba(0, 0, 0, 0.815);
+  padding: 50px 0; 
+}
+
+footer .footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+footer .social-media img{
+  width: 22px;
+}
+
+footer .logo {
+  width: 180px;
+  color: #fff;
+  font-family: 'Montserrat', cursive;
+}
+footer .social-media{
+  margin: 20px 0;
+}
+
+footer .social-media a{
+  color: #001a21;
+  margin-right: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  /*transition: .3s linear;*/
+}
+
+footer .right-col h1{
+  font-size: 26px;
+}
+footer .border{
+  width: 100px;
+  height: 4px;
+  background: #013E7C;
+  margin: 2px;
+}
+
+footer .newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .txtb {
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  background: #343A40;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 5px;
+  min-width: 260px;
+  margin-top: 20px;
+  color: white;
+}
+
+footer .btn {
+  margin-top: 20px;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  /*background: #02B3E4;*/
+  background: #013E7C;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear; 
+}
+
+footer .btn:hover {
+  opacity: .7;
+}
